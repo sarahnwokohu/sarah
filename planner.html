@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planner — Sarah Nwokohu</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">
+            <span class="brand-initial">S</span>
+            <span class="brand-name">Nwokohu</span>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html" class="active">Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="page-header">
+        <div class="container">
+            <h1 class="page-title">Academic <span class="accent">Planner</span></h1>
+            <p class="page-subtitle">Organize your academic journey with precision</p>
+        </div>
+    </main>
+
+    <section class="planner-section">
+        <div class="container">
+            <div class="planner-layout">
+                <div class="planner-input">
+                    <h2>Add New Task</h2>
+                    <form id="taskForm" class="task-form">
+                        <div class="form-group">
+                            <label for="taskTitle">Task Title</label>
+                            <input type="text" id="taskTitle" placeholder="e.g., Complete COS 106 Assignment" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="taskSubject">Subject/Course</label>
+                            <input type="text" id="taskSubject" placeholder="e.g., Introduction to Web Technologies" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="taskPriority">Priority</label>
+                                <select id="taskPriority">
+                                    <option value="low">Low</option>
+                                    <option value="medium" selected>Medium</option>
+                                    <option value="high">High</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="taskDue">Due Date</label>
+                                <input type="date" id="taskDue" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Add Task</button>
+                    </form>
+
+                    <div class="planner-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" id="totalTasks">0</span>
+                            <span class="stat-label">Total</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="pendingTasks">0</span>
+                            <span class="stat-label">Pending</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="completedTasks">0</span>
+                            <span class="stat-label">Completed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="planner-list">
+                    <h2>My Tasks</h2>
+                    <div class="filter-tabs">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="pending">Pending</button>
+                        <button class="filter-btn" data-filter="completed">Completed</button>
+                    </div>
+                    <ul id="taskList" class="task-list">
+                        <!-- Tasks populated by JavaScript -->
+                    </ul>
+                    <div id="emptyState" class="empty-state">
+                        <p>No tasks yet. Add your first academic task above.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Sarah Nwokohu. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

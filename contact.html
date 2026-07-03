@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Sarah Nwokohu</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">
+            <span class="brand-initial">S</span>
+            <span class="brand-name">Nwokohu</span>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Planner</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="page-header">
+        <div class="container">
+            <h1 class="page-title">Get in <span class="accent">Touch</span></h1>
+            <p class="page-subtitle">Let's discuss how I can contribute to your organization</p>
+        </div>
+    </main>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p class="contact-intro">
+                        I'm currently open to financial analyst roles, business consulting opportunities, 
+                        and collaborative projects at the intersection of finance and technology.
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-detail">
+                                <h3>Email</h3>
+                                <a href="mailto:s.nwokohu2803@miva.edu.ng">s.nwokohu2803@miva.edu.ng</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div class="contact-detail">
+                                <h3>Phone</h3>
+                                <a href="tel:+2348160110039">+234 816 011 0039</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-detail">
+                                <h3>Address</h3>
+                                <p>Eneka-Igwuru Airport Road<br>Port Harcourt, Rivers State<br>Nigeria</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="availability">
+                        <h3>Availability</h3>
+                        <table class="availability-table">
+                            <tr>
+                                <td>Monday – Friday</td>
+                                <td>9:00 AM – 5:00 PM (WAT)</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>10:00 AM – 2:00 PM (WAT)</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>Unavailable</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <h2>Send a Message</h2>
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="contactName">Full Name</label>
+                            <input type="text" id="contactName" name="name" placeholder="Your full name">
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address</label>
+                            <input type="email" id="contactEmail" name="email" placeholder="your.email@example.com">
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactPhone">Phone Number</label>
+                            <input type="tel" id="contactPhone" name="phone" placeholder="e.g., 08012345678">
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message</label>
+                            <textarea id="contactMessage" name="message" rows="5" placeholder="Tell me about your project or opportunity..."></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                        <div id="formSuccess" class="form-success">
+                            <p>✓ Message sent successfully! I'll get back to you within 24 hours.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Sarah Nwokohu. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — Sarah Nwokohu</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">
+            <span class="brand-initial">S</span>
+            <span class="brand-name">Nwokohu</span>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="planner.html">Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="page-header">
+        <div class="container">
+            <h1 class="page-title">Selected <span class="accent">Projects</span></h1>
+            <p class="page-subtitle">Analytical work that demonstrates precision and insight</p>
+        </div>
+    </main>
+
+    <section class="projects-section">
+        <div class="container">
+            <div class="projects-grid">
+                <article class="project-card featured">
+                    <div class="project-image">
+                        <img src="assets/images/project1.jpg" alt="Financial Dashboard">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" onclick="alert('Demo link coming soon'); return false;">View Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">Financial Analysis</span>
+                        <h2 class="project-title">SME Financial Health Dashboard</h2>
+                        <p class="project-description">
+                            A comprehensive Excel-based dashboard analyzing the financial health of 50+ 
+                            small and medium enterprises in Rivers State. Features automated ratio calculations, 
+                            trend analysis, and risk scoring algorithms that reduced assessment time by 60%.
+                        </p>
+                        <ul class="project-tech">
+                            <li>Excel VBA</li>
+                            <li>Power Query</li>
+                            <li>Financial Modeling</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project2.jpg" alt="Budget Analysis">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" onclick="alert('Demo link coming soon'); return false;">View Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">Budget Planning</span>
+                        <h2 class="project-title">Annual Budget Forecasting System</h2>
+                        <p class="project-description">
+                            Developed a zero-based budgeting framework for a manufacturing firm, incorporating 
+                            variance analysis and scenario planning. Achieved 15% cost reduction through 
+                            strategic reallocation of operational expenditures.
+                        </p>
+                        <ul class="project-tech">
+                            <li>SPSS</li>
+                            <li>Forecasting Models</li>
+                            <li>Strategic Planning</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project3.jpg" alt="Portfolio Website">
+                        <div class="project-overlay">
+                            <a href="index.html" class="project-link">Live Site</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">Web Development</span>
+                        <h2 class="project-title">Responsive Academic Portfolio</h2>
+                        <p class="project-description">
+                            This very website — a fully responsive, semantic HTML5 portfolio with interactive 
+                            JavaScript components, CSS Grid layouts, and mobile-first design principles. 
+                            Built as a term project for COS 106 at MIVA Open University.
+                        </p>
+                        <ul class="project-tech">
+                            <li>HTML5</li>
+                            <li>CSS3 Grid/Flexbox</li>
+                            <li>Vanilla JavaScript</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Sarah Nwokohu. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
